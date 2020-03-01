@@ -5,6 +5,13 @@
 <style>
 
 @font-face {
+    font-family: 'A-OTF Shin Go Pro DB';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/AOTFShinGoProDeBold.woff') format('woff');
+}
+
+@font-face {
     font-family: 'A-OTF Shin Go Pro R';
     font-style: normal;
     font-weight: normal;
@@ -20,16 +27,80 @@
 
 body:not(h1) {
     font-family: 'A-OTF Shin Go Pro R';
+    background-color: #dd9136;
 }
 
 h1 {
-    font-family: 'A-OTF Shin Go Pro M';
+    font-family: 'A-OTF Shin Go Pro DB';
+    font-size: 48px;
+    color: #ffffff;
+    text-shadow: 3px 3px rgb(50, 50, 50);
+}
+
+#navbartable {
+    border-collapse: separate;
+    border-spacing: 15px 0px;
+    margin-left: -15px;
+}
+
+td {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+td:hover {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 #container {
     margin: 0 auto;
     width: 700px;
     line-height: 120%;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 6px;
+    border-color: #f5a23d;
+    border-radius: 20px;
+}
+
+a:not(td a) {
+    color: #f5a23d;
+    filter: brightness(1.0);
+}
+
+a:not(td a):hover {
+    color: #f5a23d;
+    filter: brightness(0.85);
+}
+
+td a {
+    color: #ffffff;
+    filter: brightness(1.0);
+}
+
+td a:hover {
+    color: #ffffff;
+    filter: brightness(0.85);
+}
+
+#navbar:not(h1) {
+    padding: 20px;
+    padding-top: 1px;
+    background-color: #f5a23d;
+    color: #ffffff;
+}
+
+#content {
+    padding: 20px;
+    padding-top: 10px;
+    color: rgb(50, 50, 50);
 }
 
 </style>
@@ -37,23 +108,38 @@ h1 {
 </head>
 
 <body>
-  <div id="container">
-
-  <h1>Kaizo Tanks</h1>
-  <a href="index.html">About</a>
-  <a>Install Guide</a>
-  <a>Updates</a>
-  <a>Support</a>
-  <p>Welcome! Looks like you've stumbled upon my Wii Play Tanks level pack, Kaizo Tanks. It's a work-in-progress and there are currently no public releases, so check the Updates page for progress reports on the project.</p>
-  <p>The pack will have 20 levels of varying difficulties, featuring humorous twists and fun level mechanics all throughout. The best part? If you have a Wii or Wii U, a copy of Wii Play, a computer, an Internet connection, and an SD card, you'll be able to play it yourself!</p>
-  <p>Special thanks to:</p>
-  <ul>
-    <li><b>The Goldfish King</b>, for creating extensive documentation on the formatting of Tanks game files and helping with a large texture issue</li><br>
-    <li><b>GibHaltmannKill</b>, for creating Blitzkrieg Tools, a pack of Windows programs that help edit Tanks levels and level titles, and also for helping me troubleshoot issues with custom titles through his impressive Assembly knowledge</li><br>
-    <li><b>JimmyKaz</b>, for answering my Wii modding questions and helping me troubleshoot, and also for helping draft Mission 3</li><br>
-    <li><b>SkyArk142</b>, for supporting the pack and helping draft Mission 10</li><br/>
-  </ul>
-<p>This pack couldn't have been possible without these people, so a big thank you goes out to every one of them.</p>
-<p>Obviously, Wii Play is property of Nintendo. The only content that belongs to me is the actual modification to the game.</p>
+    <div id="container">
+        <div id="navbar">
+            <h1>Kaizo Tanks</h1>
+            <table id="navbartable"><tbody>
+                <tr id="navbarrow">
+                    <td id="yeet"><a href="index.html">About</a></td>
+                    <td><a>Install Guide</a></td>
+                    <td><a>Updates</a></td>
+                    <td><a>Support</a></td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div id="content">
+            <p>Welcome! Looks like you've stumbled upon my <i>Wii Play</i> Tanks level pack, Kaizo Tanks. It's a work-in-progress and there are currently no public releases, so check the Updates page for progress reports on the project.</p>
+            <p>The pack will have 20 levels of varying difficulties, featuring humorous twists and fun level mechanics all throughout. The best part? If you have a Wii or Wii U, a copy of <i>Wii Play</i>, a computer, an Internet connection, and an SD card, you'll be able to play it yourself!</p>
+            <hr/>
+            <p>Special thanks to:</p>
+            <ul>
+                <li><b>The Goldfish King</b>, for creating extensive documentation on the formatting of Tanks game files and helping with a large texture issue</li><br>
+                <li><b>GibHaltmannKill</b>, for creating Blitzkrieg Tools, a pack of Windows programs that help edit Tanks levels and level titles, and also for helping me troubleshoot issues with custom titles through his impressive Assembly knowledge</li><br>
+                <li><b>JimmyKaz</b>, for answering my Wii modding questions and helping me troubleshoot, and also for helping draft Mission 3</li><br>
+                <li><b>SkyArk142</b>, for supporting the pack and helping draft Mission 10</li><br/>
+            </ul>
+            <hr/>
+            <p>This pack couldn't have been possible without these people, so a big thank you goes out to every one of them.</p>
+            <p>Obviously, <i>Wii Play</i> is property of Nintendo. The only content that belongs to me is the actual modification to the game.</p>
+            <hr/>
+           <p>Special thanks to <b>Arizo</b> for helping me develop this site.<br/>
+           <p>Her channels are:</p><br/>
+          <a href="https://www.youtube.com/channel/UClGRY2xAjfQdsCkisYWP71w?view_as=subscriber">Youtube<a><br/>
+          <a href="https://www.twitch.tv/heyitsnattwitch/followers">Twitch</a>
+        </div>
+    </div>
 </body>
 </html>
