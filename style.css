@@ -137,3 +137,41 @@ a:hover {
 ul {
     margin-bottom: 5px;
 }
+
+#return {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #f5a23d;
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+    background-color: rgba(0, 0, 0, 0.1);
+    letter-spacing: 0.1em;
+    transition: background-color 0.2s;
+    transition: letter-spacing 0.2s;
+}
+
+#return:hover {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #f5a23d;
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.2em;
+    transition: background-color 0.2s;
+    transition: letter-spacing 0.2s;
+}
+
+#return a {
+    color: #ffffff;
+    font-family: 'A-OTF Shin Go Pro DB';
+    font-size: 24px;
+}
