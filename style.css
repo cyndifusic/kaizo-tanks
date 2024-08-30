@@ -52,13 +52,18 @@ h1 {
     letter-spacing: 0.1em;
 }
 
-#navbartable {
-    border-collapse: separate;
-    border-spacing: 17px 0px;
-    margin-left: -15px;
+#navbarrow .nav-element-selected {
+    background-color:rgba(0, 0, 0, 0.2)
 }
 
-#navbarrow td {
+#navbarrow {
+    display: flex;
+    gap: 0.125rem;
+    padding: 2px;
+    width: fit-content;
+}
+
+#navbarrow a {
     font-family: 'A-OTF Shin Go Pro DB';
     letter-spacing: 0.1em;
     font-size: 18px;
@@ -67,10 +72,9 @@ h1 {
     transition: background-color 0.2s;
     transition: letter-spacing 0.2s;
     border-radius: 15px;
-    margin: 10px;
 }
 
-#navbarrow td:hover {
+#navbarrow a:hover {
     font-family: 'A-OTF Shin Go Pro DB';
     letter-spacing: 0.2em;
     font-size: 18px;
@@ -79,7 +83,14 @@ h1 {
     transition: background-color 0.2s;
     transition: letter-spacing 0.2s;
     border-radius: 15px;
-    margin: 10px;
+}
+
+#navbarrow a {
+    color: #ffffff;
+}
+
+#navbarrow a:hover {
+    filter: brightness(0.85);
 }
 
 #container {
@@ -100,16 +111,6 @@ a {
 
 a:hover {
     color: #f5a23d;
-    filter: brightness(0.85);
-}
-
-#navbarrow td a {
-    color: #ffffff;
-    filter: brightness(1.0);
-}
-
-#navbarrow td a:hover {
-    color: #ffffff;
     filter: brightness(0.85);
 }
 
