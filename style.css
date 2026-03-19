@@ -29,6 +29,11 @@
 body:not(#navbar):not(span):not(#bottomtext):not(.heading) {
     font-family: 'A-OTF Shin Go Pro R';
     background-color: #dd9136;
+    overflow-y: scroll;
+}
+
+body {
+    
 }
 
 #bottomtext {
